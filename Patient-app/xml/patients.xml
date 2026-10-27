@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cabinet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="patients.xsd">
+
+  <patients>
+
+    <patient id="P-00001">
+      <identite>
+        <prenom>Sophie</prenom>
+        <nom>Bernard</nom>
+        <naissance>1972-03-12</naissance>
+        <sexe>F</sexe>
+        <secu>2 72 03 75 042 116</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 12 34 56 78</tel>
+        <email>sophie.bernard@email.fr</email>
+        <adresse>5 Rue Victor Hugo, 75011 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>A+</sang>
+        <taille_cm>162</taille_cm>
+        <poids_kg>68</poids_kg>
+        <imc>25.9</imc>
+        <pathologies>
+          <pathologie>Hypertension</pathologie>
+          <pathologie>Hypercholestérolémie</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Aspirine</allergie>
+        </allergies>
+        <medicaments>Amlodipine 5mg, Atorvastatine 10mg</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>5.1</glycemie>
+        <tension>138/85</tension>
+        <fc>72</fc>
+        <spo2>98</spo2>
+      </constantes>
+      <statut>stable</statut>
+      <nb_visites>18</nb_visites>
+      <dernier_rdv>2026-04-24</dernier_rdv>
+    </patient>
+
+    <patient id="P-00002">
+      <identite>
+        <prenom>Marc</prenom>
+        <nom>Lefebvre</nom>
+        <naissance>1965-07-08</naissance>
+        <sexe>M</sexe>
+        <secu>1 65 07 75 108 224</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 87 65 43 21</tel>
+        <email>marc.lefebvre@email.fr</email>
+        <adresse>22 Ave des Fleurs, 75015 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>O+</sang>
+        <taille_cm>178</taille_cm>
+        <poids_kg>88</poids_kg>
+        <imc>27.8</imc>
+        <pathologies>
+          <pathologie>Diabète type 2</pathologie>
+        </pathologies>
+        <allergies/>
+        <medicaments>Metformine 850mg</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>7.8</glycemie>
+        <tension>142/90</tension>
+        <fc>78</fc>
+        <spo2>97</spo2>
+      </constantes>
+      <statut>checkup</statut>
+      <nb_visites>24</nb_visites>
+      <dernier_rdv>2026-04-24</dernier_rdv>
+    </patient>
+
+    <patient id="P-00003">
+      <identite>
+        <prenom>Isabelle</prenom>
+        <nom>Morin</nom>
+        <naissance>1987-11-25</naissance>
+        <sexe>F</sexe>
+        <secu>2 87 11 75 116 332</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 55 44 33 22</tel>
+        <email>isabelle.morin@email.fr</email>
+        <adresse>18 Bd Saint-Germain, 75006 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>B+</sang>
+        <taille_cm>168</taille_cm>
+        <poids_kg>61</poids_kg>
+        <imc>21.6</imc>
+        <pathologies>
+          <pathologie>Fièvre persistante</pathologie>
+          <pathologie>Rhinopharyngite</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Pénicilline</allergie>
+        </allergies>
+        <medicaments>Paracétamol 1g</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>4.9</glycemie>
+        <tension>118/75</tension>
+        <fc>88</fc>
+        <spo2>96</spo2>
+      </constantes>
+      <statut>new</statut>
+      <nb_visites>3</nb_visites>
+      <dernier_rdv>2026-04-24</dernier_rdv>
+    </patient>
+
+    <patient id="P-00004">
+      <identite>
+        <prenom>Thomas</prenom>
+        <nom>Rousseau</nom>
+        <naissance>1980-06-14</naissance>
+        <sexe>M</sexe>
+        <secu>1 80 06 75 024 441</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 11 22 33 44</tel>
+        <email>t.rousseau@email.fr</email>
+        <adresse>9 Rue du Louvre, 75001 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>AB-</sang>
+        <taille_cm>182</taille_cm>
+        <poids_kg>84</poids_kg>
+        <imc>25.4</imc>
+        <pathologies>
+          <pathologie>Bilan de santé annuel</pathologie>
+        </pathologies>
+        <allergies/>
+        <medicaments>Aucun traitement en cours</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>5.3</glycemie>
+        <tension>124/80</tension>
+        <fc>65</fc>
+        <spo2>99</spo2>
+      </constantes>
+      <statut>stable</statut>
+      <nb_visites>6</nb_visites>
+      <dernier_rdv>2026-04-24</dernier_rdv>
+    </patient>
+
+    <patient id="P-00005">
+      <identite>
+        <prenom>Camille</prenom>
+        <nom>Petit</nom>
+        <naissance>1996-09-03</naissance>
+        <sexe>F</sexe>
+        <secu>2 96 09 75 116 008</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 77 88 99 00</tel>
+        <email>c.petit@email.fr</email>
+        <adresse>34 Rue de Rivoli, 75004 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>O-</sang>
+        <taille_cm>170</taille_cm>
+        <poids_kg>58</poids_kg>
+        <imc>20.1</imc>
+        <pathologies>
+          <pathologie>Lombalgies</pathologie>
+          <pathologie>Contractures musculaires</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>AINS</allergie>
+        </allergies>
+        <medicaments>Myorelaxant</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>4.7</glycemie>
+        <tension>115/72</tension>
+        <fc>70</fc>
+        <spo2>99</spo2>
+      </constantes>
+      <statut>stable</statut>
+      <nb_visites>8</nb_visites>
+      <dernier_rdv>2026-04-18</dernier_rdv>
+    </patient>
+
+    <patient id="P-00006">
+      <identite>
+        <prenom>Laurent</prenom>
+        <nom>Girard</nom>
+        <naissance>1958-02-19</naissance>
+        <sexe>M</sexe>
+        <secu>1 58 02 75 082 556</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 44 33 22 11</tel>
+        <email>l.girard@email.fr</email>
+        <adresse>77 Rue de la Paix, 75002 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>A-</sang>
+        <taille_cm>174</taille_cm>
+        <poids_kg>93</poids_kg>
+        <imc>30.7</imc>
+        <pathologies>
+          <pathologie>Diabète type 2</pathologie>
+          <pathologie>HTA</pathologie>
+          <pathologie>Obésité</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Sulfamides</allergie>
+        </allergies>
+        <medicaments>Insuline Glargine, Gliclazide 30mg, Ramipril</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>9.4</glycemie>
+        <tension>152/96</tension>
+        <fc>84</fc>
+        <spo2>95</spo2>
+      </constantes>
+      <statut>urgent</statut>
+      <nb_visites>42</nb_visites>
+      <dernier_rdv>2026-04-22</dernier_rdv>
+    </patient>
+
+    <patient id="P-00007">
+      <identite>
+        <prenom>Nathalie</prenom>
+        <nom>Simon</nom>
+        <naissance>1983-01-07</naissance>
+        <sexe>F</sexe>
+        <secu>2 83 01 75 042 771</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 55 66 77 88</tel>
+        <email>n.simon@email.fr</email>
+        <adresse>12 Place de la Bastille, 75012 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>B-</sang>
+        <taille_cm>165</taille_cm>
+        <poids_kg>65</poids_kg>
+        <imc>23.9</imc>
+        <pathologies>
+          <pathologie>Trouble anxieux</pathologie>
+          <pathologie>Insomnie</pathologie>
+        </pathologies>
+        <allergies/>
+        <medicaments>Sertraline 50mg, Mélatonine</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>4.8</glycemie>
+        <tension>122/78</tension>
+        <fc>82</fc>
+        <spo2>98</spo2>
+      </constantes>
+      <statut>stable</statut>
+      <nb_visites>15</nb_visites>
+      <dernier_rdv>2026-04-20</dernier_rdv>
+    </patient>
+
+    <patient id="P-00008">
+      <identite>
+        <prenom>Pierre</prenom>
+        <nom>Dubois</nom>
+        <naissance>1954-04-30</naissance>
+        <sexe>M</sexe>
+        <secu>1 54 04 75 024 983</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 22 33 44 55</tel>
+        <email>p.dubois@email.fr</email>
+        <adresse>8 Rue Montmartre, 75009 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>O+</sang>
+        <taille_cm>171</taille_cm>
+        <poids_kg>79</poids_kg>
+        <imc>27.0</imc>
+        <pathologies>
+          <pathologie>Hypertension</pathologie>
+          <pathologie>Arythmie</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Codéine</allergie>
+        </allergies>
+        <medicaments>Bisoprolol 5mg, Ramipril 5mg, Warfarine</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>5.6</glycemie>
+        <tension>148/92</tension>
+        <fc>58</fc>
+        <spo2>96</spo2>
+      </constantes>
+      <statut>checkup</statut>
+      <nb_visites>36</nb_visites>
+      <dernier_rdv>2026-04-22</dernier_rdv>
+    </patient>
+
+    <patient id="P-00009">
+      <identite>
+        <prenom>Henri</prenom>
+        <nom>Moreau</nom>
+        <naissance>1967-08-15</naissance>
+        <sexe>M</sexe>
+        <secu>1 67 08 75 082 114</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 99 88 77 66</tel>
+        <email>h.moreau@email.fr</email>
+        <adresse>45 Rue de la Roquette, 75011 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>A+</sang>
+        <taille_cm>176</taille_cm>
+        <poids_kg>98</poids_kg>
+        <imc>31.6</imc>
+        <pathologies>
+          <pathologie>Diabète type 2 décompensé</pathologie>
+          <pathologie>Obésité morbide</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Metformine (intolérance)</allergie>
+        </allergies>
+        <medicaments>Glipizide 5mg, Insuline Rapide</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>3.2</glycemie>
+        <tension>160/100</tension>
+        <fc>92</fc>
+        <spo2>94</spo2>
+      </constantes>
+      <statut>urgent</statut>
+      <nb_visites>28</nb_visites>
+      <dernier_rdv>2026-04-23</dernier_rdv>
+    </patient>
+
+    <patient id="P-00010">
+      <identite>
+        <prenom>Amélie</prenom>
+        <nom>Fontaine</nom>
+        <naissance>1990-05-22</naissance>
+        <sexe>F</sexe>
+        <secu>2 90 05 75 042 225</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 11 99 88 77</tel>
+        <email>a.fontaine@email.fr</email>
+        <adresse>3 Rue de Tolbiac, 75013 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>AB+</sang>
+        <taille_cm>167</taille_cm>
+        <poids_kg>70</poids_kg>
+        <imc>25.1</imc>
+        <pathologies>
+          <pathologie>Hypercholestérolémie familiale</pathologie>
+        </pathologies>
+        <allergies/>
+        <medicaments>Rosuvastatine 20mg</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>5.0</glycemie>
+        <tension>125/82</tension>
+        <fc>74</fc>
+        <spo2>99</spo2>
+      </constantes>
+      <statut>checkup</statut>
+      <nb_visites>9</nb_visites>
+      <dernier_rdv>2026-04-22</dernier_rdv>
+    </patient>
+
+    <patient id="P-00011">
+      <identite>
+        <prenom>François</prenom>
+        <nom>Leroy</nom>
+        <naissance>1975-11-10</naissance>
+        <sexe>M</sexe>
+        <secu>1 75 11 75 108 337</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 66 55 44 33</tel>
+        <email>f.leroy@email.fr</email>
+        <adresse>21 Ave Daumesnil, 75012 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>B+</sang>
+        <taille_cm>180</taille_cm>
+        <poids_kg>86</poids_kg>
+        <imc>26.5</imc>
+        <pathologies>
+          <pathologie>Asthme modéré</pathologie>
+          <pathologie>Rhinite allergique</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Acariens</allergie>
+          <allergie>Pollen</allergie>
+        </allergies>
+        <medicaments>Salmétérol/Fluticasone, Cétirizine 10mg</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>5.2</glycemie>
+        <tension>128/82</tension>
+        <fc>68</fc>
+        <spo2>97</spo2>
+      </constantes>
+      <statut>stable</statut>
+      <nb_visites>12</nb_visites>
+      <dernier_rdv>2026-04-19</dernier_rdv>
+    </patient>
+
+    <patient id="P-00012">
+      <identite>
+        <prenom>Christine</prenom>
+        <nom>Blanc</nom>
+        <naissance>1962-07-04</naissance>
+        <sexe>F</sexe>
+        <secu>2 62 07 75 042 448</secu>
+      </identite>
+      <contact>
+        <tel>+33 6 33 22 11 00</tel>
+        <email>c.blanc@email.fr</email>
+        <adresse>16 Bd Voltaire, 75011 Paris</adresse>
+      </contact>
+      <medical>
+        <sang>A+</sang>
+        <taille_cm>160</taille_cm>
+        <poids_kg>72</poids_kg>
+        <imc>28.1</imc>
+        <pathologies>
+          <pathologie>Arthrose genou</pathologie>
+          <pathologie>Ostéoporose</pathologie>
+        </pathologies>
+        <allergies>
+          <allergie>Latex</allergie>
+        </allergies>
+        <medicaments>Calcium 1000mg, Vitamine D3, Paracétamol PRN</medicaments>
+      </medical>
+      <constantes>
+        <glycemie>5.4</glycemie>
+        <tension>136/84</tension>
+        <fc>76</fc>
+        <spo2>97</spo2>
+      </constantes>
+      <statut>stable</statut>
+      <nb_visites>22</nb_visites>
+      <dernier_rdv>2026-04-21</dernier_rdv>
+    </patient>
+
+  </patients>
+
+</cabinet>

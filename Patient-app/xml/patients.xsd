@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="cabinet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="patients">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="patient" type="PatientType" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="PatientType">
+    <xs:sequence>
+      <xs:element name="identite"  type="IdentiteType"/>
+      <xs:element name="contact"   type="ContactType"/>
+      <xs:element name="medical"   type="MedicalType"/>
+      <xs:element name="constantes" type="ConstantesType"/>
+      <xs:element name="statut">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="stable"/>
+            <xs:enumeration value="checkup"/>
+            <xs:enumeration value="urgent"/>
+            <xs:enumeration value="new"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nb_visites" type="xs:nonNegativeInteger"/>
+      <xs:element name="dernier_rdv" type="xs:date"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="IdentiteType">
+    <xs:sequence>
+      <xs:element name="prenom"    type="xs:string"/>
+      <xs:element name="nom"       type="xs:string"/>
+      <xs:element name="naissance" type="xs:date"/>
+      <xs:element name="sexe">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="M"/>
+            <xs:enumeration value="F"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="secu" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ContactType">
+    <xs:sequence>
+      <xs:element name="tel"     type="xs:string"/>
+      <xs:element name="email"   type="xs:string"/>
+      <xs:element name="adresse" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MedicalType">
+    <xs:sequence>
+      <xs:element name="sang"       type="xs:string"/>
+      <xs:element name="taille_cm"  type="xs:positiveInteger"/>
+      <xs:element name="poids_kg"   type="xs:decimal"/>
+      <xs:element name="imc"        type="xs:decimal"/>
+      <xs:element name="pathologies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="pathologie" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="allergies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="allergie" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="medicaments" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ConstantesType">
+    <xs:sequence>
+      <xs:element name="glycemie" type="xs:decimal"/>
+      <xs:element name="tension"  type="xs:string"/>
+      <xs:element name="fc"       type="xs:positiveInteger"/>
+      <xs:element name="spo2"     type="xs:positiveInteger"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

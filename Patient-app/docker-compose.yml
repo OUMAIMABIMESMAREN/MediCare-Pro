@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+
+  mongo:
+    image: mongo:7
+    container_name: cabinet_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - cabinet_net
+
+  backend:
+    build: ./backend
+    container_name: cabinet_backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/cabinet_medical
+      - JWT_SECRET=cabinet_medical_secret_jwt_2026
+      - JWT_EXPIRE=7d
+      - PORT=5000
+      - NODE_ENV=production
+    depends_on:
+      - mongo
+    networks:
+      - cabinet_net
+
+  frontend:
+    build: ./frontend
+    container_name: cabinet_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - cabinet_net
+
+volumes:
+  mongo_data:
+
+networks:
+  cabinet_net:
+    driver: bridge
